@@ -1,0 +1,73 @@
+|demo
+Done <= control:inst.Done
+Start => control:inst.Start
+X => control:inst.X
+CP => control:inst.CP
+CP1 <= control:inst.CP1
+CP2 <= control:inst.CP2
+con <= SixteenCount:inst1.con
+Y[0] <= print:inst3.Y[0]
+Y[1] <= print:inst3.Y[1]
+Y[2] <= print:inst3.Y[2]
+Y[3] <= print:inst3.Y[3]
+Y[4] <= print:inst3.Y[4]
+Y[5] <= print:inst3.Y[5]
+Y[6] <= print:inst3.Y[6]
+
+
+|demo|control:inst
+Start => R~0.DATAA
+X => always0~0.IN1
+CP => CP2$latch.DATAIN
+CP => CP1.DATAIN
+con => R~0.OUTPUTSELECT
+con => always0~0.IN0
+Done <= <VCC>
+CP1 <= CP.DB_MAX_OUTPUT_PORT_TYPE
+CP2 <= CP2$latch.DB_MAX_OUTPUT_PORT_TYPE
+R <= R~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|demo|SixteenCount:inst1
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clk => cnt[0].CLK
+clk => con~reg0.CLK
+rst => cnt[3].ACLR
+rst => cnt[2].ACLR
+rst => cnt[1].ACLR
+rst => cnt[0].ACLR
+rst => con~reg0.ENA
+con <= con~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|demo|print:inst3
+A[0] => Decoder0.IN3
+A[1] => Decoder0.IN2
+A[2] => Decoder0.IN1
+A[3] => Decoder0.IN0
+Y[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|demo|count:inst2
+clk => cnt[3]~reg0.CLK
+clk => cnt[2]~reg0.CLK
+clk => cnt[1]~reg0.CLK
+clk => cnt[0]~reg0.CLK
+rst => cnt[3]~reg0.ACLR
+rst => cnt[2]~reg0.ACLR
+rst => cnt[1]~reg0.ACLR
+rst => cnt[0]~reg0.ACLR
+cnt[0] <= cnt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] <= cnt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[2] <= cnt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[3] <= cnt[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

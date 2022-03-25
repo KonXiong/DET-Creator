@@ -1,0 +1,252 @@
+Simulator report for demo
+Fri Feb 25 21:07:40 2022
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 49 nodes     ;
+; Simulation Coverage         ;      93.75 % ;
+; Total Number of Transitions ; 1234         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; On         ; Off           ;
+; VCD File for PowerPlay Power Analyzer output destination                                   ; demo.vcd   ;               ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      93.75 % ;
+; Total nodes checked                                 ; 49           ;
+; Total output ports checked                          ; 48           ;
+; Total output ports with complete 1/0-value coverage ; 45           ;
+; Total output ports with no 1/0-value coverage       ; 3            ;
+; Total output ports with no 1-value coverage         ; 3            ;
+; Total output ports with no 0-value coverage         ; 3            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                      ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |demo|Start                   ; |demo|Start                   ; out              ;
+; |demo|X                       ; |demo|X                       ; out              ;
+; |demo|CP                      ; |demo|CP                      ; out              ;
+; |demo|CP1                     ; |demo|CP1                     ; pin_out          ;
+; |demo|CP2                     ; |demo|CP2                     ; pin_out          ;
+; |demo|Y[6]                    ; |demo|Y[6]                    ; pin_out          ;
+; |demo|Y[5]                    ; |demo|Y[5]                    ; pin_out          ;
+; |demo|Y[4]                    ; |demo|Y[4]                    ; pin_out          ;
+; |demo|Y[3]                    ; |demo|Y[3]                    ; pin_out          ;
+; |demo|Y[2]                    ; |demo|Y[2]                    ; pin_out          ;
+; |demo|Y[1]                    ; |demo|Y[1]                    ; pin_out          ;
+; |demo|Y[0]                    ; |demo|Y[0]                    ; pin_out          ;
+; |demo|count:inst2|cnt[3]      ; |demo|count:inst2|cnt[3]      ; regout           ;
+; |demo|count:inst2|cnt[2]      ; |demo|count:inst2|cnt[2]      ; regout           ;
+; |demo|count:inst2|cnt[1]      ; |demo|count:inst2|cnt[1]      ; regout           ;
+; |demo|print:inst3|Y~0         ; |demo|print:inst3|Y~0         ; out0             ;
+; |demo|print:inst3|WideOr0     ; |demo|print:inst3|WideOr0     ; out0             ;
+; |demo|print:inst3|WideOr1     ; |demo|print:inst3|WideOr1     ; out0             ;
+; |demo|print:inst3|WideOr2     ; |demo|print:inst3|WideOr2     ; out0             ;
+; |demo|print:inst3|WideOr3     ; |demo|print:inst3|WideOr3     ; out0             ;
+; |demo|print:inst3|WideOr4     ; |demo|print:inst3|WideOr4     ; out0             ;
+; |demo|print:inst3|WideOr5     ; |demo|print:inst3|WideOr5     ; out0             ;
+; |demo|control:inst|CP2        ; |demo|control:inst|CP2        ; out              ;
+; |demo|control:inst|always0~0  ; |demo|control:inst|always0~0  ; out0             ;
+; |demo|control:inst|R          ; |demo|control:inst|R          ; out              ;
+; |demo|print:inst3|Decoder0~0  ; |demo|print:inst3|Decoder0~0  ; out              ;
+; |demo|print:inst3|Decoder0~1  ; |demo|print:inst3|Decoder0~1  ; out              ;
+; |demo|print:inst3|Decoder0~2  ; |demo|print:inst3|Decoder0~2  ; out              ;
+; |demo|print:inst3|Decoder0~3  ; |demo|print:inst3|Decoder0~3  ; out              ;
+; |demo|print:inst3|Decoder0~4  ; |demo|print:inst3|Decoder0~4  ; out              ;
+; |demo|print:inst3|Decoder0~5  ; |demo|print:inst3|Decoder0~5  ; out              ;
+; |demo|print:inst3|Decoder0~6  ; |demo|print:inst3|Decoder0~6  ; out              ;
+; |demo|print:inst3|Decoder0~7  ; |demo|print:inst3|Decoder0~7  ; out              ;
+; |demo|print:inst3|Decoder0~8  ; |demo|print:inst3|Decoder0~8  ; out              ;
+; |demo|print:inst3|Decoder0~9  ; |demo|print:inst3|Decoder0~9  ; out              ;
+; |demo|print:inst3|Decoder0~10 ; |demo|print:inst3|Decoder0~10 ; out              ;
+; |demo|print:inst3|Decoder0~11 ; |demo|print:inst3|Decoder0~11 ; out              ;
+; |demo|print:inst3|Decoder0~12 ; |demo|print:inst3|Decoder0~12 ; out              ;
+; |demo|print:inst3|Decoder0~13 ; |demo|print:inst3|Decoder0~13 ; out              ;
+; |demo|print:inst3|Decoder0~14 ; |demo|print:inst3|Decoder0~14 ; out              ;
+; |demo|count:inst2|Add0~0      ; |demo|count:inst2|Add0~0      ; out0             ;
+; |demo|count:inst2|Add0~1      ; |demo|count:inst2|Add0~1      ; out0             ;
+; |demo|count:inst2|Add0~2      ; |demo|count:inst2|Add0~2      ; out0             ;
+; |demo|count:inst2|Add0~3      ; |demo|count:inst2|Add0~3      ; out0             ;
+; |demo|count:inst2|Add0~4      ; |demo|count:inst2|Add0~4      ; out0             ;
++-------------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                       ;
++------------------------------+------------------------------+------------------+
+; Node Name                    ; Output Port Name             ; Output Port Type ;
++------------------------------+------------------------------+------------------+
+; |demo|Done                   ; |demo|Done                   ; pin_out          ;
+; |demo|con                    ; |demo|con                    ; pin_out          ;
+; |demo|SixteenCount:inst1|con ; |demo|SixteenCount:inst1|con ; regout           ;
++------------------------------+------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                       ;
++------------------------------+------------------------------+------------------+
+; Node Name                    ; Output Port Name             ; Output Port Type ;
++------------------------------+------------------------------+------------------+
+; |demo|Done                   ; |demo|Done                   ; pin_out          ;
+; |demo|con                    ; |demo|con                    ; pin_out          ;
+; |demo|SixteenCount:inst1|con ; |demo|SixteenCount:inst1|con ; regout           ;
++------------------------------+------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Feb 25 21:07:40 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off demo -c demo
+Info: Using vector source file "D:/Desktop/Demo/Demo/demo.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of demo.vwf called demo.sim_ori.vwf has been created in the db folder
+Warning: Cannot find channels in vector source file for the following output ports - channels are required for VCD file generation for PowerPlay Power Analyzer
+    Warning: Output port: "|demo|count:inst2|cnt[0]"
+    Warning: Output port: "|demo|count:inst2|cnt[3]"
+    Warning: Output port: "|demo|count:inst2|cnt[2]"
+    Warning: Output port: "|demo|count:inst2|cnt[1]"
+    Warning: Output port: "|demo|print:inst3|Y~0"
+    Warning: Output port: "|demo|print:inst3|WideOr0"
+    Warning: Output port: "|demo|print:inst3|WideOr1"
+    Warning: Output port: "|demo|print:inst3|WideOr2"
+    Warning: Output port: "|demo|print:inst3|WideOr3"
+    Warning: Output port: "|demo|print:inst3|WideOr4"
+    Warning: Output port: "|demo|print:inst3|WideOr5"
+    Warning: Output port: "|demo|SixteenCount:inst1|con"
+    Warning: Output port: "|demo|control:inst|CP2"
+    Warning: Output port: "|demo|control:inst|always0~0"
+    Warning: Output port: "|demo|control:inst|R"
+    Warning: Output port: "|demo|print:inst3|Decoder0~0"
+    Warning: Output port: "|demo|print:inst3|Decoder0~1"
+    Warning: Output port: "|demo|print:inst3|Decoder0~2"
+    Warning: Output port: "|demo|print:inst3|Decoder0~3"
+    Warning: Output port: "|demo|print:inst3|Decoder0~4"
+    Warning: Output port: "|demo|print:inst3|Decoder0~5"
+    Warning: Output port: "|demo|print:inst3|Decoder0~6"
+    Warning: Output port: "|demo|print:inst3|Decoder0~7"
+    Warning: Output port: "|demo|print:inst3|Decoder0~8"
+    Warning: Output port: "|demo|print:inst3|Decoder0~9"
+    Warning: Output port: "|demo|print:inst3|Decoder0~10"
+    Warning: Output port: "|demo|print:inst3|Decoder0~11"
+    Warning: Output port: "|demo|print:inst3|Decoder0~12"
+    Warning: Output port: "|demo|print:inst3|Decoder0~13"
+    Warning: Output port: "|demo|print:inst3|Decoder0~14"
+    Warning: Output port: "|demo|count:inst2|Add0~0"
+    Warning: Output port: "|demo|count:inst2|Add0~1"
+    Warning: Output port: "|demo|count:inst2|Add0~2"
+    Warning: Output port: "|demo|count:inst2|Add0~3"
+    Warning: Output port: "|demo|count:inst2|Add0~4"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      93.75 %
+Info: Number of transitions in simulation is 1234
+Info: Vector file demo.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Created VCD File D:/Desktop/Demo/Demo/demo.vcd
+Info: Quartus II Simulator was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 179 megabytes
+    Info: Processing ended: Fri Feb 25 21:07:40 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

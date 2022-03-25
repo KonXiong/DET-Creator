@@ -1,0 +1,85 @@
+|demo
+Done <= control:inst3.Done
+CP => control:inst3.CP
+CP => count:inst.clk
+CP => count:inst4.clk
+Start => control:inst3.Start
+X => control:inst3.X
+CP1 <= control:inst3.CP1
+CP2 <= control:inst3.CP2
+num[0] <= count:inst.num[0]
+num[1] <= count:inst.num[1]
+num[2] <= count:inst.num[2]
+num[3] <= count:inst.num[3]
+state[0] <= control:inst3.state[0]
+state[1] <= control:inst3.state[1]
+Y[0] <= count:inst4.num[0]
+Y[1] <= count:inst4.num[1]
+Y[2] <= count:inst4.num[2]
+Y[3] <= count:inst4.num[3]
+
+
+|demo|control:inst3
+CP => state[1]~reg0.CLK
+CP => state[0]~reg0.CLK
+CP => rst~reg0.CLK
+CP => Done~reg0.CLK
+CP => CP2~reg0.CLK
+CP => CP1~reg0.CLK
+Start => state[1]~reg0.ACLR
+Start => state[0]~reg0.ACLR
+Start => rst~reg0.PRESET
+Start => CP1~reg0.ENA
+Start => Done~reg0.ENA
+Start => CP2~reg0.ENA
+X => CP2~0.DATAB
+Done <= Done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[0] => Equal1.IN0
+num[1] => Equal1.IN1
+num[2] => Equal1.IN2
+num[3] => Equal1.IN3
+CP1 <= CP1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CP2 <= CP2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rst <= rst~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|demo|count:inst
+CP => num~3.OUTPUTSELECT
+CP => num~2.OUTPUTSELECT
+CP => num~1.OUTPUTSELECT
+CP => num~0.OUTPUTSELECT
+clk => num[3]~reg0.CLK
+clk => num[2]~reg0.CLK
+clk => num[1]~reg0.CLK
+clk => num[0]~reg0.CLK
+num[0] <= num[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[1] <= num[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[2] <= num[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[3] <= num[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rst => num~7.OUTPUTSELECT
+rst => num~6.OUTPUTSELECT
+rst => num~5.OUTPUTSELECT
+rst => num~4.OUTPUTSELECT
+
+
+|demo|count:inst4
+CP => num~3.OUTPUTSELECT
+CP => num~2.OUTPUTSELECT
+CP => num~1.OUTPUTSELECT
+CP => num~0.OUTPUTSELECT
+clk => num[3]~reg0.CLK
+clk => num[2]~reg0.CLK
+clk => num[1]~reg0.CLK
+clk => num[0]~reg0.CLK
+num[0] <= num[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[1] <= num[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[2] <= num[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[3] <= num[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rst => num~7.OUTPUTSELECT
+rst => num~6.OUTPUTSELECT
+rst => num~5.OUTPUTSELECT
+rst => num~4.OUTPUTSELECT
+
+

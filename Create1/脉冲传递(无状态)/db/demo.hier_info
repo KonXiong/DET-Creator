@@ -1,0 +1,57 @@
+|demo
+Done <= control:inst.Done
+Start => control:inst.Start
+X => control:inst.X
+CP => control:inst.CP
+CP1 <= control:inst.CP1
+CP2 <= control:inst.CP2
+con <= SixteenCount:inst4.con
+Y[0] <= count:inst2.cnt[0]
+Y[1] <= count:inst2.cnt[1]
+Y[2] <= count:inst2.cnt[2]
+Y[3] <= count:inst2.cnt[3]
+
+
+|demo|control:inst
+Start => R~0.DATAB
+X => always0~0.IN1
+CP => CP2$latch.DATAIN
+CP => CP1.DATAIN
+con => always0~0.IN0
+con => R~0.OUTPUTSELECT
+con => Done.DATAIN
+Done <= con.DB_MAX_OUTPUT_PORT_TYPE
+CP1 <= CP.DB_MAX_OUTPUT_PORT_TYPE
+CP2 <= CP2$latch.DB_MAX_OUTPUT_PORT_TYPE
+R <= R~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|demo|SixteenCount:inst4
+clk => con~reg0.CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clk => cnt[0].CLK
+rst => con~reg0.ACLR
+rst => cnt[3].ACLR
+rst => cnt[2].ACLR
+rst => cnt[1].ACLR
+rst => cnt[0].ACLR
+con <= con~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|demo|count:inst2
+clk => cnt[3]~reg0.CLK
+clk => cnt[2]~reg0.CLK
+clk => cnt[1]~reg0.CLK
+clk => cnt[0]~reg0.CLK
+rst => cnt[3]~reg0.ACLR
+rst => cnt[2]~reg0.ACLR
+rst => cnt[1]~reg0.ACLR
+rst => cnt[0]~reg0.ACLR
+cnt[0] <= cnt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] <= cnt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[2] <= cnt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[3] <= cnt[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

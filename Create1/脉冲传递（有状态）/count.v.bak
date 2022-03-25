@@ -1,0 +1,15 @@
+module count(CP,clk,num,rst);
+input clk,rst,CP;
+output reg [3:0] num;
+
+always @(posedge clk)
+	begin
+	if(!rst)
+		begin
+		if(CP==1) num=num+4'b0001;
+		end
+	else
+		num=4'b0000;
+	end
+
+endmodule

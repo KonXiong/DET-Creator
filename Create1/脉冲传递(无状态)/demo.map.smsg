@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at SixtennCount.v(16): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at control.v(18): always construct contains both blocking and non-blocking assignments
