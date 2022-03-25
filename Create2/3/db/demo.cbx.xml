@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="demo">
+		<CBX_INST_ENTRY INSTANCE_NAME="|demo|count:inst|lpm_mult:Mult0" CBX_FILE_NAME="mult_9111.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|demo|sinphase:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_4u61.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

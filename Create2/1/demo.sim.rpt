@@ -1,0 +1,851 @@
+Simulator report for demo
+Thu Mar 17 17:23:39 2022
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 ms       ;
+; Simulation Netlist Size     ; 401 nodes    ;
+; Simulation Coverage         ;      81.07 % ;
+; Total Number of Transitions ; 931441       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5T144C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++------------------------------------------------------------------------------------------------+
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ALTSYNCRAM ;
++------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      81.07 % ;
+; Total nodes checked                                 ; 401          ;
+; Total output ports checked                          ; 581          ;
+; Total output ports with complete 1/0-value coverage ; 471          ;
+; Total output ports with no 1/0-value coverage       ; 98           ;
+; Total output ports with no 1-value coverage         ; 98           ;
+; Total output ports with no 0-value coverage         ; 110          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                      ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                        ; Output Port Name                                                                           ; Output Port Type ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0 ; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[0] ; portadataout0    ;
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0 ; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[1] ; portadataout1    ;
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0 ; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[2] ; portadataout2    ;
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0 ; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[3] ; portadataout3    ;
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0 ; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[4] ; portadataout4    ;
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0 ; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[5] ; portadataout5    ;
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0 ; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[6] ; portadataout6    ;
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0 ; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[7] ; portadataout7    ;
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0 ; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[8] ; portadataout8    ;
+; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0 ; |demo|sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[9] ; portadataout9    ;
+; |demo|phase:inst1|Add4~0                                                                         ; |demo|phase:inst1|Add4~0                                                                   ; combout          ;
+; |demo|phase:inst1|Add4~0                                                                         ; |demo|phase:inst1|Add4~1                                                                   ; cout             ;
+; |demo|phase:inst1|Add4~2                                                                         ; |demo|phase:inst1|Add4~2                                                                   ; combout          ;
+; |demo|phase:inst1|Add4~2                                                                         ; |demo|phase:inst1|Add4~3                                                                   ; cout             ;
+; |demo|phase:inst1|Add4~4                                                                         ; |demo|phase:inst1|Add4~4                                                                   ; combout          ;
+; |demo|phase:inst1|Add4~4                                                                         ; |demo|phase:inst1|Add4~5                                                                   ; cout             ;
+; |demo|phase:inst1|Add4~6                                                                         ; |demo|phase:inst1|Add4~6                                                                   ; combout          ;
+; |demo|phase:inst1|Add4~6                                                                         ; |demo|phase:inst1|Add4~7                                                                   ; cout             ;
+; |demo|phase:inst1|Add4~8                                                                         ; |demo|phase:inst1|Add4~8                                                                   ; combout          ;
+; |demo|phase:inst1|Add4~10                                                                        ; |demo|phase:inst1|Add4~10                                                                  ; combout          ;
+; |demo|phase:inst1|Add4~12                                                                        ; |demo|phase:inst1|Add4~12                                                                  ; combout          ;
+; |demo|phase:inst1|Add4~14                                                                        ; |demo|phase:inst1|Add4~14                                                                  ; combout          ;
+; |demo|phase:inst1|Add4~16                                                                        ; |demo|phase:inst1|Add4~16                                                                  ; combout          ;
+; |demo|phase:inst1|Add5~0                                                                         ; |demo|phase:inst1|Add5~0                                                                   ; combout          ;
+; |demo|phase:inst1|Add5~0                                                                         ; |demo|phase:inst1|Add5~1                                                                   ; cout             ;
+; |demo|phase:inst1|Add5~2                                                                         ; |demo|phase:inst1|Add5~2                                                                   ; combout          ;
+; |demo|phase:inst1|Add5~2                                                                         ; |demo|phase:inst1|Add5~3                                                                   ; cout             ;
+; |demo|phase:inst1|Add5~4                                                                         ; |demo|phase:inst1|Add5~4                                                                   ; combout          ;
+; |demo|phase:inst1|Add5~4                                                                         ; |demo|phase:inst1|Add5~5                                                                   ; cout             ;
+; |demo|phase:inst1|Add5~6                                                                         ; |demo|phase:inst1|Add5~6                                                                   ; combout          ;
+; |demo|phase:inst1|Add5~6                                                                         ; |demo|phase:inst1|Add5~7                                                                   ; cout             ;
+; |demo|phase:inst1|Add5~8                                                                         ; |demo|phase:inst1|Add5~8                                                                   ; combout          ;
+; |demo|phase:inst1|Add5~10                                                                        ; |demo|phase:inst1|Add5~10                                                                  ; combout          ;
+; |demo|phase:inst1|Add5~12                                                                        ; |demo|phase:inst1|Add5~12                                                                  ; combout          ;
+; |demo|phase:inst1|Add5~14                                                                        ; |demo|phase:inst1|Add5~14                                                                  ; combout          ;
+; |demo|phase:inst1|Add3~0                                                                         ; |demo|phase:inst1|Add3~0                                                                   ; combout          ;
+; |demo|phase:inst1|Add3~0                                                                         ; |demo|phase:inst1|Add3~1                                                                   ; cout             ;
+; |demo|phase:inst1|Add3~2                                                                         ; |demo|phase:inst1|Add3~2                                                                   ; combout          ;
+; |demo|phase:inst1|Add3~2                                                                         ; |demo|phase:inst1|Add3~3                                                                   ; cout             ;
+; |demo|phase:inst1|Add3~4                                                                         ; |demo|phase:inst1|Add3~4                                                                   ; combout          ;
+; |demo|phase:inst1|Add3~4                                                                         ; |demo|phase:inst1|Add3~5                                                                   ; cout             ;
+; |demo|phase:inst1|Add3~6                                                                         ; |demo|phase:inst1|Add3~6                                                                   ; combout          ;
+; |demo|phase:inst1|Add3~6                                                                         ; |demo|phase:inst1|Add3~7                                                                   ; cout             ;
+; |demo|phase:inst1|Add3~8                                                                         ; |demo|phase:inst1|Add3~8                                                                   ; combout          ;
+; |demo|phase:inst1|Add3~8                                                                         ; |demo|phase:inst1|Add3~9                                                                   ; cout             ;
+; |demo|phase:inst1|Add3~10                                                                        ; |demo|phase:inst1|Add3~10                                                                  ; combout          ;
+; |demo|phase:inst1|Add3~10                                                                        ; |demo|phase:inst1|Add3~11                                                                  ; cout             ;
+; |demo|phase:inst1|Add3~12                                                                        ; |demo|phase:inst1|Add3~12                                                                  ; combout          ;
+; |demo|phase:inst1|Add3~14                                                                        ; |demo|phase:inst1|Add3~14                                                                  ; combout          ;
+; |demo|phase:inst1|Add3~16                                                                        ; |demo|phase:inst1|Add3~16                                                                  ; combout          ;
+; |demo|phase:inst1|Add3~18                                                                        ; |demo|phase:inst1|Add3~18                                                                  ; combout          ;
+; |demo|phase:inst1|Add6~0                                                                         ; |demo|phase:inst1|Add6~0                                                                   ; combout          ;
+; |demo|phase:inst1|Add6~0                                                                         ; |demo|phase:inst1|Add6~1                                                                   ; cout             ;
+; |demo|phase:inst1|Add6~2                                                                         ; |demo|phase:inst1|Add6~2                                                                   ; combout          ;
+; |demo|phase:inst1|Add6~2                                                                         ; |demo|phase:inst1|Add6~3                                                                   ; cout             ;
+; |demo|phase:inst1|Add6~4                                                                         ; |demo|phase:inst1|Add6~4                                                                   ; combout          ;
+; |demo|phase:inst1|Add6~4                                                                         ; |demo|phase:inst1|Add6~5                                                                   ; cout             ;
+; |demo|phase:inst1|Add6~6                                                                         ; |demo|phase:inst1|Add6~6                                                                   ; combout          ;
+; |demo|phase:inst1|Add6~6                                                                         ; |demo|phase:inst1|Add6~7                                                                   ; cout             ;
+; |demo|phase:inst1|Add6~8                                                                         ; |demo|phase:inst1|Add6~8                                                                   ; combout          ;
+; |demo|phase:inst1|Add6~10                                                                        ; |demo|phase:inst1|Add6~10                                                                  ; combout          ;
+; |demo|phase:inst1|Add6~12                                                                        ; |demo|phase:inst1|Add6~12                                                                  ; combout          ;
+; |demo|phase:inst1|Add8~0                                                                         ; |demo|phase:inst1|Add8~0                                                                   ; combout          ;
+; |demo|phase:inst1|Add8~0                                                                         ; |demo|phase:inst1|Add8~1                                                                   ; cout             ;
+; |demo|phase:inst1|Add8~2                                                                         ; |demo|phase:inst1|Add8~2                                                                   ; combout          ;
+; |demo|phase:inst1|Add8~2                                                                         ; |demo|phase:inst1|Add8~3                                                                   ; cout             ;
+; |demo|phase:inst1|Add8~4                                                                         ; |demo|phase:inst1|Add8~4                                                                   ; combout          ;
+; |demo|phase:inst1|Add8~4                                                                         ; |demo|phase:inst1|Add8~5                                                                   ; cout             ;
+; |demo|phase:inst1|Add8~6                                                                         ; |demo|phase:inst1|Add8~6                                                                   ; combout          ;
+; |demo|phase:inst1|Add8~6                                                                         ; |demo|phase:inst1|Add8~7                                                                   ; cout             ;
+; |demo|phase:inst1|Add8~8                                                                         ; |demo|phase:inst1|Add8~8                                                                   ; combout          ;
+; |demo|phase:inst1|Add9~0                                                                         ; |demo|phase:inst1|Add9~0                                                                   ; combout          ;
+; |demo|phase:inst1|Add9~0                                                                         ; |demo|phase:inst1|Add9~1                                                                   ; cout             ;
+; |demo|phase:inst1|Add9~2                                                                         ; |demo|phase:inst1|Add9~2                                                                   ; combout          ;
+; |demo|phase:inst1|Add9~2                                                                         ; |demo|phase:inst1|Add9~3                                                                   ; cout             ;
+; |demo|phase:inst1|Add9~4                                                                         ; |demo|phase:inst1|Add9~4                                                                   ; combout          ;
+; |demo|phase:inst1|Add9~4                                                                         ; |demo|phase:inst1|Add9~5                                                                   ; cout             ;
+; |demo|phase:inst1|Add9~6                                                                         ; |demo|phase:inst1|Add9~6                                                                   ; combout          ;
+; |demo|phase:inst1|Add9~6                                                                         ; |demo|phase:inst1|Add9~7                                                                   ; cout             ;
+; |demo|phase:inst1|Add7~0                                                                         ; |demo|phase:inst1|Add7~0                                                                   ; combout          ;
+; |demo|phase:inst1|Add7~0                                                                         ; |demo|phase:inst1|Add7~1                                                                   ; cout             ;
+; |demo|phase:inst1|Add7~2                                                                         ; |demo|phase:inst1|Add7~2                                                                   ; combout          ;
+; |demo|phase:inst1|Add7~2                                                                         ; |demo|phase:inst1|Add7~3                                                                   ; cout             ;
+; |demo|phase:inst1|Add7~4                                                                         ; |demo|phase:inst1|Add7~4                                                                   ; combout          ;
+; |demo|phase:inst1|Add7~4                                                                         ; |demo|phase:inst1|Add7~5                                                                   ; cout             ;
+; |demo|phase:inst1|Add7~6                                                                         ; |demo|phase:inst1|Add7~6                                                                   ; combout          ;
+; |demo|phase:inst1|Add7~6                                                                         ; |demo|phase:inst1|Add7~7                                                                   ; cout             ;
+; |demo|phase:inst1|Add7~8                                                                         ; |demo|phase:inst1|Add7~8                                                                   ; combout          ;
+; |demo|phase:inst1|Add7~8                                                                         ; |demo|phase:inst1|Add7~9                                                                   ; cout             ;
+; |demo|phase:inst1|Add7~10                                                                        ; |demo|phase:inst1|Add7~10                                                                  ; combout          ;
+; |demo|phase:inst1|Add10~0                                                                        ; |demo|phase:inst1|Add10~0                                                                  ; combout          ;
+; |demo|phase:inst1|Add10~0                                                                        ; |demo|phase:inst1|Add10~1                                                                  ; cout             ;
+; |demo|phase:inst1|Add10~2                                                                        ; |demo|phase:inst1|Add10~2                                                                  ; combout          ;
+; |demo|phase:inst1|Add10~2                                                                        ; |demo|phase:inst1|Add10~3                                                                  ; cout             ;
+; |demo|phase:inst1|Add10~4                                                                        ; |demo|phase:inst1|Add10~4                                                                  ; combout          ;
+; |demo|phase:inst1|Add10~4                                                                        ; |demo|phase:inst1|Add10~5                                                                  ; cout             ;
+; |demo|phase:inst1|Add2~0                                                                         ; |demo|phase:inst1|Add2~0                                                                   ; combout          ;
+; |demo|phase:inst1|Add2~0                                                                         ; |demo|phase:inst1|Add2~1                                                                   ; cout             ;
+; |demo|phase:inst1|Add2~2                                                                         ; |demo|phase:inst1|Add2~2                                                                   ; combout          ;
+; |demo|phase:inst1|Add2~2                                                                         ; |demo|phase:inst1|Add2~3                                                                   ; cout             ;
+; |demo|phase:inst1|Add2~4                                                                         ; |demo|phase:inst1|Add2~4                                                                   ; combout          ;
+; |demo|phase:inst1|Add2~4                                                                         ; |demo|phase:inst1|Add2~5                                                                   ; cout             ;
+; |demo|phase:inst1|Add2~6                                                                         ; |demo|phase:inst1|Add2~6                                                                   ; combout          ;
+; |demo|phase:inst1|Add2~6                                                                         ; |demo|phase:inst1|Add2~7                                                                   ; cout             ;
+; |demo|phase:inst1|Add2~8                                                                         ; |demo|phase:inst1|Add2~8                                                                   ; combout          ;
+; |demo|phase:inst1|Add2~8                                                                         ; |demo|phase:inst1|Add2~9                                                                   ; cout             ;
+; |demo|phase:inst1|Add2~10                                                                        ; |demo|phase:inst1|Add2~10                                                                  ; combout          ;
+; |demo|phase:inst1|Add2~10                                                                        ; |demo|phase:inst1|Add2~11                                                                  ; cout             ;
+; |demo|phase:inst1|Add2~12                                                                        ; |demo|phase:inst1|Add2~12                                                                  ; combout          ;
+; |demo|phase:inst1|Add2~12                                                                        ; |demo|phase:inst1|Add2~13                                                                  ; cout             ;
+; |demo|phase:inst1|Add2~14                                                                        ; |demo|phase:inst1|Add2~14                                                                  ; combout          ;
+; |demo|phase:inst1|Add2~16                                                                        ; |demo|phase:inst1|Add2~16                                                                  ; combout          ;
+; |demo|phase:inst1|Add2~18                                                                        ; |demo|phase:inst1|Add2~18                                                                  ; combout          ;
+; |demo|phase:inst1|Add2~20                                                                        ; |demo|phase:inst1|Add2~20                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~0                                                                         ; |demo|phase:inst1|Add0~0                                                                   ; combout          ;
+; |demo|phase:inst1|Add0~0                                                                         ; |demo|phase:inst1|Add0~1                                                                   ; cout             ;
+; |demo|phase:inst1|Add0~2                                                                         ; |demo|phase:inst1|Add0~2                                                                   ; combout          ;
+; |demo|phase:inst1|Add0~4                                                                         ; |demo|phase:inst1|Add0~4                                                                   ; combout          ;
+; |demo|phase:inst1|Add0~6                                                                         ; |demo|phase:inst1|Add0~6                                                                   ; combout          ;
+; |demo|phase:inst1|Add0~8                                                                         ; |demo|phase:inst1|Add0~8                                                                   ; combout          ;
+; |demo|phase:inst1|Add0~10                                                                        ; |demo|phase:inst1|Add0~10                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~12                                                                        ; |demo|phase:inst1|Add0~12                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~14                                                                        ; |demo|phase:inst1|Add0~14                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~16                                                                        ; |demo|phase:inst1|Add0~16                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~18                                                                        ; |demo|phase:inst1|Add0~18                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~20                                                                        ; |demo|phase:inst1|Add0~20                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~22                                                                        ; |demo|phase:inst1|Add0~22                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~0                                                                         ; |demo|phase:inst1|Add1~0                                                                   ; combout          ;
+; |demo|phase:inst1|Add1~0                                                                         ; |demo|phase:inst1|Add1~1                                                                   ; cout             ;
+; |demo|phase:inst1|Add1~2                                                                         ; |demo|phase:inst1|Add1~2                                                                   ; combout          ;
+; |demo|phase:inst1|Add1~2                                                                         ; |demo|phase:inst1|Add1~3                                                                   ; cout             ;
+; |demo|phase:inst1|Add1~4                                                                         ; |demo|phase:inst1|Add1~4                                                                   ; combout          ;
+; |demo|phase:inst1|Add1~4                                                                         ; |demo|phase:inst1|Add1~5                                                                   ; cout             ;
+; |demo|phase:inst1|Add1~6                                                                         ; |demo|phase:inst1|Add1~6                                                                   ; combout          ;
+; |demo|phase:inst1|Add1~6                                                                         ; |demo|phase:inst1|Add1~7                                                                   ; cout             ;
+; |demo|phase:inst1|Add1~8                                                                         ; |demo|phase:inst1|Add1~8                                                                   ; combout          ;
+; |demo|phase:inst1|Add1~8                                                                         ; |demo|phase:inst1|Add1~9                                                                   ; cout             ;
+; |demo|phase:inst1|Add1~10                                                                        ; |demo|phase:inst1|Add1~10                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~10                                                                        ; |demo|phase:inst1|Add1~11                                                                  ; cout             ;
+; |demo|phase:inst1|Add1~12                                                                        ; |demo|phase:inst1|Add1~12                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~12                                                                        ; |demo|phase:inst1|Add1~13                                                                  ; cout             ;
+; |demo|phase:inst1|Add1~14                                                                        ; |demo|phase:inst1|Add1~14                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~14                                                                        ; |demo|phase:inst1|Add1~15                                                                  ; cout             ;
+; |demo|phase:inst1|Add1~16                                                                        ; |demo|phase:inst1|Add1~16                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~18                                                                        ; |demo|phase:inst1|Add1~18                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~20                                                                        ; |demo|phase:inst1|Add1~20                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~22                                                                        ; |demo|phase:inst1|Add1~22                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~0                                                                        ; |demo|phase:inst1|Add11~0                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~0                                                                        ; |demo|phase:inst1|Add11~1                                                                  ; cout             ;
+; |demo|phase:inst1|Add4~18                                                                        ; |demo|phase:inst1|Add4~18                                                                  ; combout          ;
+; |demo|phase:inst1|Add5~16                                                                        ; |demo|phase:inst1|Add5~16                                                                  ; combout          ;
+; |demo|phase:inst1|Add3~20                                                                        ; |demo|phase:inst1|Add3~20                                                                  ; combout          ;
+; |demo|phase:inst1|Add6~14                                                                        ; |demo|phase:inst1|Add6~14                                                                  ; combout          ;
+; |demo|phase:inst1|Add9~8                                                                         ; |demo|phase:inst1|Add9~8                                                                   ; combout          ;
+; |demo|phase:inst1|Add8~10                                                                        ; |demo|phase:inst1|Add8~10                                                                  ; combout          ;
+; |demo|phase:inst1|Add7~12                                                                        ; |demo|phase:inst1|Add7~12                                                                  ; combout          ;
+; |demo|phase:inst1|Add10~6                                                                        ; |demo|phase:inst1|Add10~6                                                                  ; combout          ;
+; |demo|phase:inst1|Add10~6                                                                        ; |demo|phase:inst1|Add10~7                                                                  ; cout             ;
+; |demo|phase:inst1|Add0~24                                                                        ; |demo|phase:inst1|Add0~24                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~24                                                                        ; |demo|phase:inst1|Add1~24                                                                  ; combout          ;
+; |demo|phase:inst1|Add2~22                                                                        ; |demo|phase:inst1|Add2~22                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~0                                                                        ; |demo|phase:inst1|Add12~0                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~0                                                                        ; |demo|phase:inst1|Add12~1                                                                  ; cout             ;
+; |demo|phase:inst1|Add11~2                                                                        ; |demo|phase:inst1|Add11~2                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~2                                                                        ; |demo|phase:inst1|Add11~3                                                                  ; cout             ;
+; |demo|phase:inst1|Add6~16                                                                        ; |demo|phase:inst1|Add6~16                                                                  ; combout          ;
+; |demo|phase:inst1|Add10~8                                                                        ; |demo|phase:inst1|Add10~8                                                                  ; combout          ;
+; |demo|phase:inst1|Add10~8                                                                        ; |demo|phase:inst1|Add10~9                                                                  ; cout             ;
+; |demo|phase:inst1|Add2~24                                                                        ; |demo|phase:inst1|Add2~24                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~0                                                                        ; |demo|phase:inst1|Add13~0                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~0                                                                        ; |demo|phase:inst1|Add13~1                                                                  ; cout             ;
+; |demo|phase:inst1|Add3~22                                                                        ; |demo|phase:inst1|Add3~22                                                                  ; combout          ;
+; |demo|phase:inst1|Add5~18                                                                        ; |demo|phase:inst1|Add5~18                                                                  ; combout          ;
+; |demo|phase:inst1|Add9~10                                                                        ; |demo|phase:inst1|Add9~10                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~26                                                                        ; |demo|phase:inst1|Add1~26                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~2                                                                        ; |demo|phase:inst1|Add12~2                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~2                                                                        ; |demo|phase:inst1|Add12~3                                                                  ; cout             ;
+; |demo|phase:inst1|Add7~14                                                                        ; |demo|phase:inst1|Add7~14                                                                  ; combout          ;
+; |demo|phase:inst1|Add8~12                                                                        ; |demo|phase:inst1|Add8~12                                                                  ; combout          ;
+; |demo|phase:inst1|Add4~20                                                                        ; |demo|phase:inst1|Add4~20                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~26                                                                        ; |demo|phase:inst1|Add0~26                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~4                                                                        ; |demo|phase:inst1|Add11~4                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~4                                                                        ; |demo|phase:inst1|Add11~5                                                                  ; cout             ;
+; |demo|phase:inst1|Add10~10                                                                       ; |demo|phase:inst1|Add10~10                                                                 ; combout          ;
+; |demo|phase:inst1|Add10~10                                                                       ; |demo|phase:inst1|Add10~11                                                                 ; cout             ;
+; |demo|phase:inst1|Add6~18                                                                        ; |demo|phase:inst1|Add6~18                                                                  ; combout          ;
+; |demo|phase:inst1|Add2~26                                                                        ; |demo|phase:inst1|Add2~26                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~2                                                                        ; |demo|phase:inst1|Add13~2                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~2                                                                        ; |demo|phase:inst1|Add13~3                                                                  ; cout             ;
+; |demo|phase:inst1|Add3~24                                                                        ; |demo|phase:inst1|Add3~24                                                                  ; combout          ;
+; |demo|phase:inst1|Add9~12                                                                        ; |demo|phase:inst1|Add9~12                                                                  ; combout          ;
+; |demo|phase:inst1|Add5~20                                                                        ; |demo|phase:inst1|Add5~20                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~28                                                                        ; |demo|phase:inst1|Add1~28                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~4                                                                        ; |demo|phase:inst1|Add12~4                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~4                                                                        ; |demo|phase:inst1|Add12~5                                                                  ; cout             ;
+; |demo|phase:inst1|Add7~16                                                                        ; |demo|phase:inst1|Add7~16                                                                  ; combout          ;
+; |demo|phase:inst1|Add4~22                                                                        ; |demo|phase:inst1|Add4~22                                                                  ; combout          ;
+; |demo|phase:inst1|Add8~14                                                                        ; |demo|phase:inst1|Add8~14                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~28                                                                        ; |demo|phase:inst1|Add0~28                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~6                                                                        ; |demo|phase:inst1|Add11~6                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~6                                                                        ; |demo|phase:inst1|Add11~7                                                                  ; cout             ;
+; |demo|phase:inst1|Add6~20                                                                        ; |demo|phase:inst1|Add6~20                                                                  ; combout          ;
+; |demo|phase:inst1|Add10~12                                                                       ; |demo|phase:inst1|Add10~12                                                                 ; combout          ;
+; |demo|phase:inst1|Add10~12                                                                       ; |demo|phase:inst1|Add10~13                                                                 ; cout             ;
+; |demo|phase:inst1|Add2~28                                                                        ; |demo|phase:inst1|Add2~28                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~4                                                                        ; |demo|phase:inst1|Add13~4                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~4                                                                        ; |demo|phase:inst1|Add13~5                                                                  ; cout             ;
+; |demo|phase:inst1|Add5~22                                                                        ; |demo|phase:inst1|Add5~22                                                                  ; combout          ;
+; |demo|phase:inst1|Add9~14                                                                        ; |demo|phase:inst1|Add9~14                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~30                                                                        ; |demo|phase:inst1|Add1~30                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~6                                                                        ; |demo|phase:inst1|Add12~6                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~6                                                                        ; |demo|phase:inst1|Add12~7                                                                  ; cout             ;
+; |demo|phase:inst1|Add3~26                                                                        ; |demo|phase:inst1|Add3~26                                                                  ; combout          ;
+; |demo|phase:inst1|Add7~18                                                                        ; |demo|phase:inst1|Add7~18                                                                  ; combout          ;
+; |demo|phase:inst1|Add8~16                                                                        ; |demo|phase:inst1|Add8~16                                                                  ; combout          ;
+; |demo|phase:inst1|Add4~24                                                                        ; |demo|phase:inst1|Add4~24                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~30                                                                        ; |demo|phase:inst1|Add0~30                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~8                                                                        ; |demo|phase:inst1|Add11~8                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~8                                                                        ; |demo|phase:inst1|Add11~9                                                                  ; cout             ;
+; |demo|phase:inst1|Add10~14                                                                       ; |demo|phase:inst1|Add10~14                                                                 ; combout          ;
+; |demo|phase:inst1|Add10~14                                                                       ; |demo|phase:inst1|Add10~15                                                                 ; cout             ;
+; |demo|phase:inst1|Add6~22                                                                        ; |demo|phase:inst1|Add6~22                                                                  ; combout          ;
+; |demo|phase:inst1|Add2~30                                                                        ; |demo|phase:inst1|Add2~30                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~6                                                                        ; |demo|phase:inst1|Add13~6                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~6                                                                        ; |demo|phase:inst1|Add13~7                                                                  ; cout             ;
+; |demo|phase:inst1|Add3~28                                                                        ; |demo|phase:inst1|Add3~28                                                                  ; combout          ;
+; |demo|phase:inst1|Add9~16                                                                        ; |demo|phase:inst1|Add9~16                                                                  ; combout          ;
+; |demo|phase:inst1|Add5~24                                                                        ; |demo|phase:inst1|Add5~24                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~32                                                                        ; |demo|phase:inst1|Add1~32                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~8                                                                        ; |demo|phase:inst1|Add12~8                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~8                                                                        ; |demo|phase:inst1|Add12~9                                                                  ; cout             ;
+; |demo|phase:inst1|Add7~20                                                                        ; |demo|phase:inst1|Add7~20                                                                  ; combout          ;
+; |demo|phase:inst1|Add4~26                                                                        ; |demo|phase:inst1|Add4~26                                                                  ; combout          ;
+; |demo|phase:inst1|Add8~18                                                                        ; |demo|phase:inst1|Add8~18                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~32                                                                        ; |demo|phase:inst1|Add0~32                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~10                                                                       ; |demo|phase:inst1|Add11~10                                                                 ; combout          ;
+; |demo|phase:inst1|Add11~10                                                                       ; |demo|phase:inst1|Add11~11                                                                 ; cout             ;
+; |demo|phase:inst1|Add6~24                                                                        ; |demo|phase:inst1|Add6~24                                                                  ; combout          ;
+; |demo|phase:inst1|Add10~16                                                                       ; |demo|phase:inst1|Add10~16                                                                 ; combout          ;
+; |demo|phase:inst1|Add10~16                                                                       ; |demo|phase:inst1|Add10~17                                                                 ; cout             ;
+; |demo|phase:inst1|Add2~32                                                                        ; |demo|phase:inst1|Add2~32                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~8                                                                        ; |demo|phase:inst1|Add13~8                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~8                                                                        ; |demo|phase:inst1|Add13~9                                                                  ; cout             ;
+; |demo|phase:inst1|Add5~26                                                                        ; |demo|phase:inst1|Add5~26                                                                  ; combout          ;
+; |demo|phase:inst1|Add9~18                                                                        ; |demo|phase:inst1|Add9~18                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~34                                                                        ; |demo|phase:inst1|Add1~34                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~10                                                                       ; |demo|phase:inst1|Add12~10                                                                 ; combout          ;
+; |demo|phase:inst1|Add12~10                                                                       ; |demo|phase:inst1|Add12~11                                                                 ; cout             ;
+; |demo|phase:inst1|Add3~30                                                                        ; |demo|phase:inst1|Add3~30                                                                  ; combout          ;
+; |demo|phase:inst1|Add7~22                                                                        ; |demo|phase:inst1|Add7~22                                                                  ; combout          ;
+; |demo|phase:inst1|Add8~20                                                                        ; |demo|phase:inst1|Add8~20                                                                  ; combout          ;
+; |demo|phase:inst1|Add4~28                                                                        ; |demo|phase:inst1|Add4~28                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~34                                                                        ; |demo|phase:inst1|Add0~34                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~12                                                                       ; |demo|phase:inst1|Add11~12                                                                 ; combout          ;
+; |demo|phase:inst1|Add11~12                                                                       ; |demo|phase:inst1|Add11~13                                                                 ; cout             ;
+; |demo|phase:inst1|Add10~18                                                                       ; |demo|phase:inst1|Add10~18                                                                 ; combout          ;
+; |demo|phase:inst1|Add6~26                                                                        ; |demo|phase:inst1|Add6~26                                                                  ; combout          ;
+; |demo|phase:inst1|Add2~34                                                                        ; |demo|phase:inst1|Add2~34                                                                  ; combout          ;
+; |demo|phase:inst1|Add13~10                                                                       ; |demo|phase:inst1|Add13~10                                                                 ; combout          ;
+; |demo|phase:inst1|Add3~32                                                                        ; |demo|phase:inst1|Add3~32                                                                  ; combout          ;
+; |demo|phase:inst1|Add9~20                                                                        ; |demo|phase:inst1|Add9~20                                                                  ; combout          ;
+; |demo|phase:inst1|Add5~28                                                                        ; |demo|phase:inst1|Add5~28                                                                  ; combout          ;
+; |demo|phase:inst1|Add1~36                                                                        ; |demo|phase:inst1|Add1~36                                                                  ; combout          ;
+; |demo|phase:inst1|Add12~12                                                                       ; |demo|phase:inst1|Add12~12                                                                 ; combout          ;
+; |demo|phase:inst1|Add7~24                                                                        ; |demo|phase:inst1|Add7~24                                                                  ; combout          ;
+; |demo|phase:inst1|Add4~30                                                                        ; |demo|phase:inst1|Add4~30                                                                  ; combout          ;
+; |demo|phase:inst1|Add8~22                                                                        ; |demo|phase:inst1|Add8~22                                                                  ; combout          ;
+; |demo|phase:inst1|Add0~36                                                                        ; |demo|phase:inst1|Add0~36                                                                  ; combout          ;
+; |demo|phase:inst1|Add11~14                                                                       ; |demo|phase:inst1|Add11~14                                                                 ; combout          ;
+; |demo|count:inst2|num[2]                                                                         ; |demo|count:inst2|num[2]                                                                   ; regout           ;
+; |demo|count:inst2|num[1]                                                                         ; |demo|count:inst2|num[1]                                                                   ; regout           ;
+; |demo|count:inst2|num[0]                                                                         ; |demo|count:inst2|num[0]                                                                   ; regout           ;
+; |demo|count:inst2|num[3]~0                                                                       ; |demo|count:inst2|num[3]~0                                                                 ; combout          ;
+; |demo|count:inst2|num[2]~1                                                                       ; |demo|count:inst2|num[2]~1                                                                 ; combout          ;
+; |demo|count:inst2|Add0~0                                                                         ; |demo|count:inst2|Add0~0                                                                   ; combout          ;
+; |demo|phase:inst1|fre[0]                                                                         ; |demo|phase:inst1|fre[0]                                                                   ; regout           ;
+; |demo|phase:inst1|fre[1]                                                                         ; |demo|phase:inst1|fre[1]                                                                   ; regout           ;
+; |demo|phase:inst1|fre[2]                                                                         ; |demo|phase:inst1|fre[2]                                                                   ; regout           ;
+; |demo|phase:inst1|fre[3]                                                                         ; |demo|phase:inst1|fre[3]                                                                   ; regout           ;
+; |demo|phase:inst1|fre[4]                                                                         ; |demo|phase:inst1|fre[4]                                                                   ; regout           ;
+; |demo|phase:inst1|fre[5]                                                                         ; |demo|phase:inst1|fre[5]                                                                   ; regout           ;
+; |demo|phase:inst1|fre[6]                                                                         ; |demo|phase:inst1|fre[6]                                                                   ; regout           ;
+; |demo|phase:inst1|fre[7]                                                                         ; |demo|phase:inst1|fre[7]                                                                   ; regout           ;
+; |demo|phase:inst1|N[12]                                                                          ; |demo|phase:inst1|N[12]                                                                    ; regout           ;
+; |demo|phase:inst1|N[13]                                                                          ; |demo|phase:inst1|N[13]                                                                    ; regout           ;
+; |demo|phase:inst1|N[14]                                                                          ; |demo|phase:inst1|N[14]                                                                    ; regout           ;
+; |demo|phase:inst1|N[15]                                                                          ; |demo|phase:inst1|N[15]                                                                    ; regout           ;
+; |demo|phase:inst1|N[16]                                                                          ; |demo|phase:inst1|N[16]                                                                    ; regout           ;
+; |demo|phase:inst1|N[17]                                                                          ; |demo|phase:inst1|N[17]                                                                    ; regout           ;
+; |demo|phase:inst1|N[18]                                                                          ; |demo|phase:inst1|N[18]                                                                    ; regout           ;
+; |demo|phase:inst1|N[19]                                                                          ; |demo|phase:inst1|N[19]                                                                    ; regout           ;
+; |demo|phase:inst1|N[11]                                                                          ; |demo|phase:inst1|N[11]                                                                    ; regout           ;
+; |demo|phase:inst1|N[10]                                                                          ; |demo|phase:inst1|N[10]                                                                    ; regout           ;
+; |demo|phase:inst1|N[9]                                                                           ; |demo|phase:inst1|N[9]                                                                     ; regout           ;
+; |demo|phase:inst1|N[8]                                                                           ; |demo|phase:inst1|N[8]                                                                     ; regout           ;
+; |demo|phase:inst1|N[7]                                                                           ; |demo|phase:inst1|N[7]                                                                     ; regout           ;
+; |demo|phase:inst1|N[6]                                                                           ; |demo|phase:inst1|N[6]                                                                     ; regout           ;
+; |demo|phase:inst1|N[5]                                                                           ; |demo|phase:inst1|N[5]                                                                     ; regout           ;
+; |demo|phase:inst1|N[4]                                                                           ; |demo|phase:inst1|N[4]                                                                     ; regout           ;
+; |demo|phase:inst1|N[3]                                                                           ; |demo|phase:inst1|N[3]                                                                     ; regout           ;
+; |demo|phase:inst1|Mux7~2                                                                         ; |demo|phase:inst1|Mux7~2                                                                   ; combout          ;
+; |demo|phase:inst1|Mux7~3                                                                         ; |demo|phase:inst1|Mux7~3                                                                   ; combout          ;
+; |demo|phase:inst1|Mux7~4                                                                         ; |demo|phase:inst1|Mux7~4                                                                   ; combout          ;
+; |demo|phase:inst1|Mux7~5                                                                         ; |demo|phase:inst1|Mux7~5                                                                   ; combout          ;
+; |demo|phase:inst1|N[2]                                                                           ; |demo|phase:inst1|N[2]                                                                     ; regout           ;
+; |demo|phase:inst1|N[0]                                                                           ; |demo|phase:inst1|N[0]                                                                     ; regout           ;
+; |demo|phase:inst1|N[1]                                                                           ; |demo|phase:inst1|N[1]                                                                     ; regout           ;
+; |demo|phase:inst1|Mux7~6                                                                         ; |demo|phase:inst1|Mux7~6                                                                   ; combout          ;
+; |demo|phase:inst1|N[10]~4                                                                        ; |demo|phase:inst1|N[10]~4                                                                  ; combout          ;
+; |demo|phase:inst1|Mux7~7                                                                         ; |demo|phase:inst1|Mux7~7                                                                   ; combout          ;
+; |demo|phase:inst1|Mux7~8                                                                         ; |demo|phase:inst1|Mux7~8                                                                   ; combout          ;
+; |demo|phase:inst1|Mux7~9                                                                         ; |demo|phase:inst1|Mux7~9                                                                   ; combout          ;
+; |demo|phase:inst1|Mux7~10                                                                        ; |demo|phase:inst1|Mux7~10                                                                  ; combout          ;
+; |demo|phase:inst1|N[12]~5                                                                        ; |demo|phase:inst1|N[12]~5                                                                  ; combout          ;
+; |demo|phase:inst1|Mux6~0                                                                         ; |demo|phase:inst1|Mux6~0                                                                   ; combout          ;
+; |demo|phase:inst1|Mux6~1                                                                         ; |demo|phase:inst1|Mux6~1                                                                   ; combout          ;
+; |demo|phase:inst1|Mux6~2                                                                         ; |demo|phase:inst1|Mux6~2                                                                   ; combout          ;
+; |demo|phase:inst1|Mux6~3                                                                         ; |demo|phase:inst1|Mux6~3                                                                   ; combout          ;
+; |demo|phase:inst1|Mux6~4                                                                         ; |demo|phase:inst1|Mux6~4                                                                   ; combout          ;
+; |demo|phase:inst1|Mux6~5                                                                         ; |demo|phase:inst1|Mux6~5                                                                   ; combout          ;
+; |demo|phase:inst1|Mux6~6                                                                         ; |demo|phase:inst1|Mux6~6                                                                   ; combout          ;
+; |demo|phase:inst1|Mux6~7                                                                         ; |demo|phase:inst1|Mux6~7                                                                   ; combout          ;
+; |demo|phase:inst1|Mux6~8                                                                         ; |demo|phase:inst1|Mux6~8                                                                   ; combout          ;
+; |demo|phase:inst1|Mux6~9                                                                         ; |demo|phase:inst1|Mux6~9                                                                   ; combout          ;
+; |demo|phase:inst1|Mux5~0                                                                         ; |demo|phase:inst1|Mux5~0                                                                   ; combout          ;
+; |demo|phase:inst1|Mux5~1                                                                         ; |demo|phase:inst1|Mux5~1                                                                   ; combout          ;
+; |demo|phase:inst1|N[14]~6                                                                        ; |demo|phase:inst1|N[14]~6                                                                  ; combout          ;
+; |demo|phase:inst1|Mux5~2                                                                         ; |demo|phase:inst1|Mux5~2                                                                   ; combout          ;
+; |demo|phase:inst1|Mux5~3                                                                         ; |demo|phase:inst1|Mux5~3                                                                   ; combout          ;
+; |demo|phase:inst1|N[14]~7                                                                        ; |demo|phase:inst1|N[14]~7                                                                  ; combout          ;
+; |demo|phase:inst1|Mux5~4                                                                         ; |demo|phase:inst1|Mux5~4                                                                   ; combout          ;
+; |demo|phase:inst1|Mux5~5                                                                         ; |demo|phase:inst1|Mux5~5                                                                   ; combout          ;
+; |demo|phase:inst1|Mux5~6                                                                         ; |demo|phase:inst1|Mux5~6                                                                   ; combout          ;
+; |demo|phase:inst1|Mux5~7                                                                         ; |demo|phase:inst1|Mux5~7                                                                   ; combout          ;
+; |demo|phase:inst1|Mux5~8                                                                         ; |demo|phase:inst1|Mux5~8                                                                   ; combout          ;
+; |demo|phase:inst1|N[14]~8                                                                        ; |demo|phase:inst1|N[14]~8                                                                  ; combout          ;
+; |demo|phase:inst1|Mux4~0                                                                         ; |demo|phase:inst1|Mux4~0                                                                   ; combout          ;
+; |demo|phase:inst1|Mux4~1                                                                         ; |demo|phase:inst1|Mux4~1                                                                   ; combout          ;
+; |demo|phase:inst1|Mux4~2                                                                         ; |demo|phase:inst1|Mux4~2                                                                   ; combout          ;
+; |demo|phase:inst1|Mux4~3                                                                         ; |demo|phase:inst1|Mux4~3                                                                   ; combout          ;
+; |demo|phase:inst1|Mux4~4                                                                         ; |demo|phase:inst1|Mux4~4                                                                   ; combout          ;
+; |demo|phase:inst1|Mux4~5                                                                         ; |demo|phase:inst1|Mux4~5                                                                   ; combout          ;
+; |demo|phase:inst1|Mux4~6                                                                         ; |demo|phase:inst1|Mux4~6                                                                   ; combout          ;
+; |demo|phase:inst1|Mux4~7                                                                         ; |demo|phase:inst1|Mux4~7                                                                   ; combout          ;
+; |demo|phase:inst1|Mux4~8                                                                         ; |demo|phase:inst1|Mux4~8                                                                   ; combout          ;
+; |demo|phase:inst1|Mux3~1                                                                         ; |demo|phase:inst1|Mux3~1                                                                   ; combout          ;
+; |demo|phase:inst1|Mux3~3                                                                         ; |demo|phase:inst1|Mux3~3                                                                   ; combout          ;
+; |demo|phase:inst1|Mux3~4                                                                         ; |demo|phase:inst1|Mux3~4                                                                   ; combout          ;
+; |demo|phase:inst1|Mux3~6                                                                         ; |demo|phase:inst1|Mux3~6                                                                   ; combout          ;
+; |demo|phase:inst1|Mux3~7                                                                         ; |demo|phase:inst1|Mux3~7                                                                   ; combout          ;
+; |demo|phase:inst1|Mux3~8                                                                         ; |demo|phase:inst1|Mux3~8                                                                   ; combout          ;
+; |demo|phase:inst1|Mux2~0                                                                         ; |demo|phase:inst1|Mux2~0                                                                   ; combout          ;
+; |demo|phase:inst1|Mux2~1                                                                         ; |demo|phase:inst1|Mux2~1                                                                   ; combout          ;
+; |demo|phase:inst1|Mux2~3                                                                         ; |demo|phase:inst1|Mux2~3                                                                   ; combout          ;
+; |demo|phase:inst1|Mux2~4                                                                         ; |demo|phase:inst1|Mux2~4                                                                   ; combout          ;
+; |demo|phase:inst1|Mux2~6                                                                         ; |demo|phase:inst1|Mux2~6                                                                   ; combout          ;
+; |demo|phase:inst1|Mux2~7                                                                         ; |demo|phase:inst1|Mux2~7                                                                   ; combout          ;
+; |demo|phase:inst1|Mux2~8                                                                         ; |demo|phase:inst1|Mux2~8                                                                   ; combout          ;
+; |demo|phase:inst1|Mux1~1                                                                         ; |demo|phase:inst1|Mux1~1                                                                   ; combout          ;
+; |demo|phase:inst1|Mux1~2                                                                         ; |demo|phase:inst1|Mux1~2                                                                   ; combout          ;
+; |demo|phase:inst1|Mux1~3                                                                         ; |demo|phase:inst1|Mux1~3                                                                   ; combout          ;
+; |demo|phase:inst1|Mux1~4                                                                         ; |demo|phase:inst1|Mux1~4                                                                   ; combout          ;
+; |demo|phase:inst1|Mux1~6                                                                         ; |demo|phase:inst1|Mux1~6                                                                   ; combout          ;
+; |demo|phase:inst1|Mux1~7                                                                         ; |demo|phase:inst1|Mux1~7                                                                   ; combout          ;
+; |demo|phase:inst1|Mux1~8                                                                         ; |demo|phase:inst1|Mux1~8                                                                   ; combout          ;
+; |demo|phase:inst1|Mux0~1                                                                         ; |demo|phase:inst1|Mux0~1                                                                   ; combout          ;
+; |demo|phase:inst1|Mux0~3                                                                         ; |demo|phase:inst1|Mux0~3                                                                   ; combout          ;
+; |demo|phase:inst1|Mux0~4                                                                         ; |demo|phase:inst1|Mux0~4                                                                   ; combout          ;
+; |demo|phase:inst1|Mux0~6                                                                         ; |demo|phase:inst1|Mux0~6                                                                   ; combout          ;
+; |demo|phase:inst1|Mux0~7                                                                         ; |demo|phase:inst1|Mux0~7                                                                   ; combout          ;
+; |demo|phase:inst1|Mux0~8                                                                         ; |demo|phase:inst1|Mux0~8                                                                   ; combout          ;
+; |demo|phase:inst1|Mux8~0                                                                         ; |demo|phase:inst1|Mux8~0                                                                   ; combout          ;
+; |demo|phase:inst1|Mux8~1                                                                         ; |demo|phase:inst1|Mux8~1                                                                   ; combout          ;
+; |demo|phase:inst1|Mux8~2                                                                         ; |demo|phase:inst1|Mux8~2                                                                   ; combout          ;
+; |demo|phase:inst1|Mux8~3                                                                         ; |demo|phase:inst1|Mux8~3                                                                   ; combout          ;
+; |demo|phase:inst1|N[10]~9                                                                        ; |demo|phase:inst1|N[10]~9                                                                  ; combout          ;
+; |demo|phase:inst1|Mux8~4                                                                         ; |demo|phase:inst1|Mux8~4                                                                   ; combout          ;
+; |demo|phase:inst1|Mux8~5                                                                         ; |demo|phase:inst1|Mux8~5                                                                   ; combout          ;
+; |demo|phase:inst1|Mux8~6                                                                         ; |demo|phase:inst1|Mux8~6                                                                   ; combout          ;
+; |demo|phase:inst1|N[10]~10                                                                       ; |demo|phase:inst1|N[10]~10                                                                 ; combout          ;
+; |demo|phase:inst1|Mux9~0                                                                         ; |demo|phase:inst1|Mux9~0                                                                   ; combout          ;
+; |demo|phase:inst1|Mux9~1                                                                         ; |demo|phase:inst1|Mux9~1                                                                   ; combout          ;
+; |demo|phase:inst1|Mux9~2                                                                         ; |demo|phase:inst1|Mux9~2                                                                   ; combout          ;
+; |demo|phase:inst1|Mux9~3                                                                         ; |demo|phase:inst1|Mux9~3                                                                   ; combout          ;
+; |demo|phase:inst1|Mux9~4                                                                         ; |demo|phase:inst1|Mux9~4                                                                   ; combout          ;
+; |demo|phase:inst1|Mux9~5                                                                         ; |demo|phase:inst1|Mux9~5                                                                   ; combout          ;
+; |demo|phase:inst1|Mux9~6                                                                         ; |demo|phase:inst1|Mux9~6                                                                   ; combout          ;
+; |demo|phase:inst1|N[9]~11                                                                        ; |demo|phase:inst1|N[9]~11                                                                  ; combout          ;
+; |demo|phase:inst1|N[9]~12                                                                        ; |demo|phase:inst1|N[9]~12                                                                  ; combout          ;
+; |demo|phase:inst1|N[9]~13                                                                        ; |demo|phase:inst1|N[9]~13                                                                  ; combout          ;
+; |demo|phase:inst1|N[9]~14                                                                        ; |demo|phase:inst1|N[9]~14                                                                  ; combout          ;
+; |demo|phase:inst1|N[9]~15                                                                        ; |demo|phase:inst1|N[9]~15                                                                  ; combout          ;
+; |demo|phase:inst1|Mux10~0                                                                        ; |demo|phase:inst1|Mux10~0                                                                  ; combout          ;
+; |demo|phase:inst1|Mux10~1                                                                        ; |demo|phase:inst1|Mux10~1                                                                  ; combout          ;
+; |demo|phase:inst1|N[9]~16                                                                        ; |demo|phase:inst1|N[9]~16                                                                  ; combout          ;
+; |demo|phase:inst1|Mux10~2                                                                        ; |demo|phase:inst1|Mux10~2                                                                  ; combout          ;
+; |demo|phase:inst1|N[9]~17                                                                        ; |demo|phase:inst1|N[9]~17                                                                  ; combout          ;
+; |demo|phase:inst1|N[8]~18                                                                        ; |demo|phase:inst1|N[8]~18                                                                  ; combout          ;
+; |demo|phase:inst1|N[8]~19                                                                        ; |demo|phase:inst1|N[8]~19                                                                  ; combout          ;
+; |demo|phase:inst1|N[8]~20                                                                        ; |demo|phase:inst1|N[8]~20                                                                  ; combout          ;
+; |demo|phase:inst1|Mux11~0                                                                        ; |demo|phase:inst1|Mux11~0                                                                  ; combout          ;
+; |demo|phase:inst1|Mux11~1                                                                        ; |demo|phase:inst1|Mux11~1                                                                  ; combout          ;
+; |demo|phase:inst1|N[8]~21                                                                        ; |demo|phase:inst1|N[8]~21                                                                  ; combout          ;
+; |demo|phase:inst1|Mux11~2                                                                        ; |demo|phase:inst1|Mux11~2                                                                  ; combout          ;
+; |demo|phase:inst1|N[8]~22                                                                        ; |demo|phase:inst1|N[8]~22                                                                  ; combout          ;
+; |demo|phase:inst1|N[7]~23                                                                        ; |demo|phase:inst1|N[7]~23                                                                  ; combout          ;
+; |demo|phase:inst1|N[7]~24                                                                        ; |demo|phase:inst1|N[7]~24                                                                  ; combout          ;
+; |demo|phase:inst1|N[7]~25                                                                        ; |demo|phase:inst1|N[7]~25                                                                  ; combout          ;
+; |demo|phase:inst1|Mux12~0                                                                        ; |demo|phase:inst1|Mux12~0                                                                  ; combout          ;
+; |demo|phase:inst1|Mux12~1                                                                        ; |demo|phase:inst1|Mux12~1                                                                  ; combout          ;
+; |demo|phase:inst1|N[7]~26                                                                        ; |demo|phase:inst1|N[7]~26                                                                  ; combout          ;
+; |demo|phase:inst1|Mux12~2                                                                        ; |demo|phase:inst1|Mux12~2                                                                  ; combout          ;
+; |demo|phase:inst1|N[7]~27                                                                        ; |demo|phase:inst1|N[7]~27                                                                  ; combout          ;
+; |demo|phase:inst1|Mux13~0                                                                        ; |demo|phase:inst1|Mux13~0                                                                  ; combout          ;
+; |demo|phase:inst1|Mux13~1                                                                        ; |demo|phase:inst1|Mux13~1                                                                  ; combout          ;
+; |demo|phase:inst1|Mux13~2                                                                        ; |demo|phase:inst1|Mux13~2                                                                  ; combout          ;
+; |demo|phase:inst1|N[6]~28                                                                        ; |demo|phase:inst1|N[6]~28                                                                  ; combout          ;
+; |demo|phase:inst1|N[6]~29                                                                        ; |demo|phase:inst1|N[6]~29                                                                  ; combout          ;
+; |demo|phase:inst1|N[6]~30                                                                        ; |demo|phase:inst1|N[6]~30                                                                  ; combout          ;
+; |demo|phase:inst1|Mux14~0                                                                        ; |demo|phase:inst1|Mux14~0                                                                  ; combout          ;
+; |demo|phase:inst1|N[14]~31                                                                       ; |demo|phase:inst1|N[14]~31                                                                 ; combout          ;
+; |demo|phase:inst1|Mux14~1                                                                        ; |demo|phase:inst1|Mux14~1                                                                  ; combout          ;
+; |demo|phase:inst1|Mux14~2                                                                        ; |demo|phase:inst1|Mux14~2                                                                  ; combout          ;
+; |demo|phase:inst1|Mux14~3                                                                        ; |demo|phase:inst1|Mux14~3                                                                  ; combout          ;
+; |demo|phase:inst1|Mux14~4                                                                        ; |demo|phase:inst1|Mux14~4                                                                  ; combout          ;
+; |demo|phase:inst1|N[5]~32                                                                        ; |demo|phase:inst1|N[5]~32                                                                  ; combout          ;
+; |demo|phase:inst1|Mux15~2                                                                        ; |demo|phase:inst1|Mux15~2                                                                  ; combout          ;
+; |demo|phase:inst1|Mux15~3                                                                        ; |demo|phase:inst1|Mux15~3                                                                  ; combout          ;
+; |demo|phase:inst1|Mux15~4                                                                        ; |demo|phase:inst1|Mux15~4                                                                  ; combout          ;
+; |demo|phase:inst1|Mux15~5                                                                        ; |demo|phase:inst1|Mux15~5                                                                  ; combout          ;
+; |demo|phase:inst1|N[4]~33                                                                        ; |demo|phase:inst1|N[4]~33                                                                  ; combout          ;
+; |demo|phase:inst1|Mux16~0                                                                        ; |demo|phase:inst1|Mux16~0                                                                  ; combout          ;
+; |demo|phase:inst1|N[3]~34                                                                        ; |demo|phase:inst1|N[3]~34                                                                  ; combout          ;
+; |demo|phase:inst1|N[3]~35                                                                        ; |demo|phase:inst1|N[3]~35                                                                  ; combout          ;
+; |demo|phase:inst1|N[3]~36                                                                        ; |demo|phase:inst1|N[3]~36                                                                  ; combout          ;
+; |demo|phase:inst1|N[3]~37                                                                        ; |demo|phase:inst1|N[3]~37                                                                  ; combout          ;
+; |demo|phase:inst1|Decoder0~0                                                                     ; |demo|phase:inst1|Decoder0~0                                                               ; combout          ;
+; |demo|phase:inst1|N[2]~38                                                                        ; |demo|phase:inst1|N[2]~38                                                                  ; combout          ;
+; |demo|phase:inst1|N[2]~39                                                                        ; |demo|phase:inst1|N[2]~39                                                                  ; combout          ;
+; |demo|phase:inst1|Mux17~0                                                                        ; |demo|phase:inst1|Mux17~0                                                                  ; combout          ;
+; |demo|phase:inst1|N[2]~40                                                                        ; |demo|phase:inst1|N[2]~40                                                                  ; combout          ;
+; |demo|phase:inst1|N[0]~41                                                                        ; |demo|phase:inst1|N[0]~41                                                                  ; combout          ;
+; |demo|phase:inst1|N[1]~42                                                                        ; |demo|phase:inst1|N[1]~42                                                                  ; combout          ;
+; |demo|phase:inst1|Mux18~0                                                                        ; |demo|phase:inst1|Mux18~0                                                                  ; combout          ;
+; |demo|phase:inst1|N[1]~43                                                                        ; |demo|phase:inst1|N[1]~43                                                                  ; combout          ;
+; |demo|phase:inst1|Mux7~11                                                                        ; |demo|phase:inst1|Mux7~11                                                                  ; combout          ;
+; |demo|phase:inst1|N[8]~44                                                                        ; |demo|phase:inst1|N[8]~44                                                                  ; combout          ;
+; |demo|phase:inst1|N[6]~45                                                                        ; |demo|phase:inst1|N[6]~45                                                                  ; combout          ;
+; |demo|phase:inst1|Mux15~6                                                                        ; |demo|phase:inst1|Mux15~6                                                                  ; combout          ;
+; |demo|count:inst2|num[0]~2                                                                       ; |demo|count:inst2|num[0]~2                                                                 ; combout          ;
+; |demo|M[2]                                                                                       ; |demo|M[2]                                                                                 ; padio            ;
+; |demo|M[1]                                                                                       ; |demo|M[1]                                                                                 ; padio            ;
+; |demo|M[0]                                                                                       ; |demo|M[0]                                                                                 ; padio            ;
+; |demo|q[9]                                                                                       ; |demo|q[9]                                                                                 ; padio            ;
+; |demo|q[8]                                                                                       ; |demo|q[8]                                                                                 ; padio            ;
+; |demo|q[7]                                                                                       ; |demo|q[7]                                                                                 ; padio            ;
+; |demo|q[6]                                                                                       ; |demo|q[6]                                                                                 ; padio            ;
+; |demo|q[5]                                                                                       ; |demo|q[5]                                                                                 ; padio            ;
+; |demo|q[4]                                                                                       ; |demo|q[4]                                                                                 ; padio            ;
+; |demo|q[3]                                                                                       ; |demo|q[3]                                                                                 ; padio            ;
+; |demo|q[2]                                                                                       ; |demo|q[2]                                                                                 ; padio            ;
+; |demo|q[1]                                                                                       ; |demo|q[1]                                                                                 ; padio            ;
+; |demo|q[0]                                                                                       ; |demo|q[0]                                                                                 ; padio            ;
+; |demo|clkm                                                                                       ; |demo|clkm~corein                                                                          ; combout          ;
+; |demo|clk                                                                                        ; |demo|clk~corein                                                                           ; combout          ;
+; |demo|clk~clkctrl                                                                                ; |demo|clk~clkctrl                                                                          ; outclk           ;
+; |demo|phase:inst1|fre[1]~feeder                                                                  ; |demo|phase:inst1|fre[1]~feeder                                                            ; combout          ;
+; |demo|phase:inst1|fre[2]~feeder                                                                  ; |demo|phase:inst1|fre[2]~feeder                                                            ; combout          ;
+; |demo|phase:inst1|fre[4]~feeder                                                                  ; |demo|phase:inst1|fre[4]~feeder                                                            ; combout          ;
+; |demo|phase:inst1|fre[6]~feeder                                                                  ; |demo|phase:inst1|fre[6]~feeder                                                            ; combout          ;
+; |demo|phase:inst1|fre[7]~feeder                                                                  ; |demo|phase:inst1|fre[7]~feeder                                                            ; combout          ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |demo|phase:inst1|Add4~8  ; |demo|phase:inst1|Add4~9  ; cout             ;
+; |demo|phase:inst1|Add4~10 ; |demo|phase:inst1|Add4~11 ; cout             ;
+; |demo|phase:inst1|Add4~12 ; |demo|phase:inst1|Add4~13 ; cout             ;
+; |demo|phase:inst1|Add4~14 ; |demo|phase:inst1|Add4~15 ; cout             ;
+; |demo|phase:inst1|Add4~16 ; |demo|phase:inst1|Add4~17 ; cout             ;
+; |demo|phase:inst1|Add5~8  ; |demo|phase:inst1|Add5~9  ; cout             ;
+; |demo|phase:inst1|Add5~10 ; |demo|phase:inst1|Add5~11 ; cout             ;
+; |demo|phase:inst1|Add5~12 ; |demo|phase:inst1|Add5~13 ; cout             ;
+; |demo|phase:inst1|Add5~14 ; |demo|phase:inst1|Add5~15 ; cout             ;
+; |demo|phase:inst1|Add3~12 ; |demo|phase:inst1|Add3~13 ; cout             ;
+; |demo|phase:inst1|Add3~14 ; |demo|phase:inst1|Add3~15 ; cout             ;
+; |demo|phase:inst1|Add3~16 ; |demo|phase:inst1|Add3~17 ; cout             ;
+; |demo|phase:inst1|Add3~18 ; |demo|phase:inst1|Add3~19 ; cout             ;
+; |demo|phase:inst1|Add6~8  ; |demo|phase:inst1|Add6~9  ; cout             ;
+; |demo|phase:inst1|Add6~10 ; |demo|phase:inst1|Add6~11 ; cout             ;
+; |demo|phase:inst1|Add6~12 ; |demo|phase:inst1|Add6~13 ; cout             ;
+; |demo|phase:inst1|Add8~8  ; |demo|phase:inst1|Add8~9  ; cout             ;
+; |demo|phase:inst1|Add7~10 ; |demo|phase:inst1|Add7~11 ; cout             ;
+; |demo|phase:inst1|Add2~14 ; |demo|phase:inst1|Add2~15 ; cout             ;
+; |demo|phase:inst1|Add2~16 ; |demo|phase:inst1|Add2~17 ; cout             ;
+; |demo|phase:inst1|Add2~18 ; |demo|phase:inst1|Add2~19 ; cout             ;
+; |demo|phase:inst1|Add2~20 ; |demo|phase:inst1|Add2~21 ; cout             ;
+; |demo|phase:inst1|Add0~2  ; |demo|phase:inst1|Add0~3  ; cout             ;
+; |demo|phase:inst1|Add0~4  ; |demo|phase:inst1|Add0~5  ; cout             ;
+; |demo|phase:inst1|Add0~6  ; |demo|phase:inst1|Add0~7  ; cout             ;
+; |demo|phase:inst1|Add0~8  ; |demo|phase:inst1|Add0~9  ; cout             ;
+; |demo|phase:inst1|Add0~10 ; |demo|phase:inst1|Add0~11 ; cout             ;
+; |demo|phase:inst1|Add0~12 ; |demo|phase:inst1|Add0~13 ; cout             ;
+; |demo|phase:inst1|Add0~14 ; |demo|phase:inst1|Add0~15 ; cout             ;
+; |demo|phase:inst1|Add0~16 ; |demo|phase:inst1|Add0~17 ; cout             ;
+; |demo|phase:inst1|Add0~18 ; |demo|phase:inst1|Add0~19 ; cout             ;
+; |demo|phase:inst1|Add0~20 ; |demo|phase:inst1|Add0~21 ; cout             ;
+; |demo|phase:inst1|Add0~22 ; |demo|phase:inst1|Add0~23 ; cout             ;
+; |demo|phase:inst1|Add1~16 ; |demo|phase:inst1|Add1~17 ; cout             ;
+; |demo|phase:inst1|Add1~18 ; |demo|phase:inst1|Add1~19 ; cout             ;
+; |demo|phase:inst1|Add1~20 ; |demo|phase:inst1|Add1~21 ; cout             ;
+; |demo|phase:inst1|Add1~22 ; |demo|phase:inst1|Add1~23 ; cout             ;
+; |demo|phase:inst1|Add4~18 ; |demo|phase:inst1|Add4~19 ; cout             ;
+; |demo|phase:inst1|Add5~16 ; |demo|phase:inst1|Add5~17 ; cout             ;
+; |demo|phase:inst1|Add3~20 ; |demo|phase:inst1|Add3~21 ; cout             ;
+; |demo|phase:inst1|Add6~14 ; |demo|phase:inst1|Add6~15 ; cout             ;
+; |demo|phase:inst1|Add9~8  ; |demo|phase:inst1|Add9~9  ; cout             ;
+; |demo|phase:inst1|Add8~10 ; |demo|phase:inst1|Add8~11 ; cout             ;
+; |demo|phase:inst1|Add7~12 ; |demo|phase:inst1|Add7~13 ; cout             ;
+; |demo|phase:inst1|Add0~24 ; |demo|phase:inst1|Add0~25 ; cout             ;
+; |demo|phase:inst1|Add1~24 ; |demo|phase:inst1|Add1~25 ; cout             ;
+; |demo|phase:inst1|Add2~22 ; |demo|phase:inst1|Add2~23 ; cout             ;
+; |demo|phase:inst1|Add6~16 ; |demo|phase:inst1|Add6~17 ; cout             ;
+; |demo|phase:inst1|Add2~24 ; |demo|phase:inst1|Add2~25 ; cout             ;
+; |demo|phase:inst1|Add3~22 ; |demo|phase:inst1|Add3~23 ; cout             ;
+; |demo|phase:inst1|Add5~18 ; |demo|phase:inst1|Add5~19 ; cout             ;
+; |demo|phase:inst1|Add9~10 ; |demo|phase:inst1|Add9~11 ; cout             ;
+; |demo|phase:inst1|Add1~26 ; |demo|phase:inst1|Add1~27 ; cout             ;
+; |demo|phase:inst1|Add7~14 ; |demo|phase:inst1|Add7~15 ; cout             ;
+; |demo|phase:inst1|Add8~12 ; |demo|phase:inst1|Add8~13 ; cout             ;
+; |demo|phase:inst1|Add4~20 ; |demo|phase:inst1|Add4~21 ; cout             ;
+; |demo|phase:inst1|Add0~26 ; |demo|phase:inst1|Add0~27 ; cout             ;
+; |demo|phase:inst1|Add6~18 ; |demo|phase:inst1|Add6~19 ; cout             ;
+; |demo|phase:inst1|Add2~26 ; |demo|phase:inst1|Add2~27 ; cout             ;
+; |demo|phase:inst1|Add3~24 ; |demo|phase:inst1|Add3~25 ; cout             ;
+; |demo|phase:inst1|Add9~12 ; |demo|phase:inst1|Add9~13 ; cout             ;
+; |demo|phase:inst1|Add5~20 ; |demo|phase:inst1|Add5~21 ; cout             ;
+; |demo|phase:inst1|Add1~28 ; |demo|phase:inst1|Add1~29 ; cout             ;
+; |demo|phase:inst1|Add7~16 ; |demo|phase:inst1|Add7~17 ; cout             ;
+; |demo|phase:inst1|Add4~22 ; |demo|phase:inst1|Add4~23 ; cout             ;
+; |demo|phase:inst1|Add8~14 ; |demo|phase:inst1|Add8~15 ; cout             ;
+; |demo|phase:inst1|Add0~28 ; |demo|phase:inst1|Add0~29 ; cout             ;
+; |demo|phase:inst1|Add6~20 ; |demo|phase:inst1|Add6~21 ; cout             ;
+; |demo|phase:inst1|Add2~28 ; |demo|phase:inst1|Add2~29 ; cout             ;
+; |demo|phase:inst1|Add5~22 ; |demo|phase:inst1|Add5~23 ; cout             ;
+; |demo|phase:inst1|Add9~14 ; |demo|phase:inst1|Add9~15 ; cout             ;
+; |demo|phase:inst1|Add1~30 ; |demo|phase:inst1|Add1~31 ; cout             ;
+; |demo|phase:inst1|Add3~26 ; |demo|phase:inst1|Add3~27 ; cout             ;
+; |demo|phase:inst1|Add7~18 ; |demo|phase:inst1|Add7~19 ; cout             ;
+; |demo|phase:inst1|Add8~16 ; |demo|phase:inst1|Add8~17 ; cout             ;
+; |demo|phase:inst1|Add4~24 ; |demo|phase:inst1|Add4~25 ; cout             ;
+; |demo|phase:inst1|Add0~30 ; |demo|phase:inst1|Add0~31 ; cout             ;
+; |demo|phase:inst1|Add6~22 ; |demo|phase:inst1|Add6~23 ; cout             ;
+; |demo|phase:inst1|Add2~30 ; |demo|phase:inst1|Add2~31 ; cout             ;
+; |demo|phase:inst1|Add3~28 ; |demo|phase:inst1|Add3~29 ; cout             ;
+; |demo|phase:inst1|Add9~16 ; |demo|phase:inst1|Add9~17 ; cout             ;
+; |demo|phase:inst1|Add5~24 ; |demo|phase:inst1|Add5~25 ; cout             ;
+; |demo|phase:inst1|Add1~32 ; |demo|phase:inst1|Add1~33 ; cout             ;
+; |demo|phase:inst1|Add7~20 ; |demo|phase:inst1|Add7~21 ; cout             ;
+; |demo|phase:inst1|Add4~26 ; |demo|phase:inst1|Add4~27 ; cout             ;
+; |demo|phase:inst1|Add8~18 ; |demo|phase:inst1|Add8~19 ; cout             ;
+; |demo|phase:inst1|Add0~32 ; |demo|phase:inst1|Add0~33 ; cout             ;
+; |demo|phase:inst1|Add6~24 ; |demo|phase:inst1|Add6~25 ; cout             ;
+; |demo|phase:inst1|Add2~32 ; |demo|phase:inst1|Add2~33 ; cout             ;
+; |demo|phase:inst1|Add5~26 ; |demo|phase:inst1|Add5~27 ; cout             ;
+; |demo|phase:inst1|Add9~18 ; |demo|phase:inst1|Add9~19 ; cout             ;
+; |demo|phase:inst1|Add1~34 ; |demo|phase:inst1|Add1~35 ; cout             ;
+; |demo|phase:inst1|Add3~30 ; |demo|phase:inst1|Add3~31 ; cout             ;
+; |demo|phase:inst1|Add7~22 ; |demo|phase:inst1|Add7~23 ; cout             ;
+; |demo|phase:inst1|Add8~20 ; |demo|phase:inst1|Add8~21 ; cout             ;
+; |demo|phase:inst1|Add4~28 ; |demo|phase:inst1|Add4~29 ; cout             ;
+; |demo|phase:inst1|Add0~34 ; |demo|phase:inst1|Add0~35 ; cout             ;
+; |demo|rst                 ; |demo|rst~corein          ; combout          ;
++---------------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |demo|phase:inst1|Add4~8  ; |demo|phase:inst1|Add4~9  ; cout             ;
+; |demo|phase:inst1|Add4~10 ; |demo|phase:inst1|Add4~11 ; cout             ;
+; |demo|phase:inst1|Add4~12 ; |demo|phase:inst1|Add4~13 ; cout             ;
+; |demo|phase:inst1|Add4~14 ; |demo|phase:inst1|Add4~15 ; cout             ;
+; |demo|phase:inst1|Add4~16 ; |demo|phase:inst1|Add4~17 ; cout             ;
+; |demo|phase:inst1|Add5~8  ; |demo|phase:inst1|Add5~9  ; cout             ;
+; |demo|phase:inst1|Add5~10 ; |demo|phase:inst1|Add5~11 ; cout             ;
+; |demo|phase:inst1|Add5~12 ; |demo|phase:inst1|Add5~13 ; cout             ;
+; |demo|phase:inst1|Add5~14 ; |demo|phase:inst1|Add5~15 ; cout             ;
+; |demo|phase:inst1|Add3~12 ; |demo|phase:inst1|Add3~13 ; cout             ;
+; |demo|phase:inst1|Add3~14 ; |demo|phase:inst1|Add3~15 ; cout             ;
+; |demo|phase:inst1|Add3~16 ; |demo|phase:inst1|Add3~17 ; cout             ;
+; |demo|phase:inst1|Add3~18 ; |demo|phase:inst1|Add3~19 ; cout             ;
+; |demo|phase:inst1|Add6~8  ; |demo|phase:inst1|Add6~9  ; cout             ;
+; |demo|phase:inst1|Add6~10 ; |demo|phase:inst1|Add6~11 ; cout             ;
+; |demo|phase:inst1|Add6~12 ; |demo|phase:inst1|Add6~13 ; cout             ;
+; |demo|phase:inst1|Add8~8  ; |demo|phase:inst1|Add8~9  ; cout             ;
+; |demo|phase:inst1|Add7~10 ; |demo|phase:inst1|Add7~11 ; cout             ;
+; |demo|phase:inst1|Add2~14 ; |demo|phase:inst1|Add2~15 ; cout             ;
+; |demo|phase:inst1|Add2~16 ; |demo|phase:inst1|Add2~17 ; cout             ;
+; |demo|phase:inst1|Add2~18 ; |demo|phase:inst1|Add2~19 ; cout             ;
+; |demo|phase:inst1|Add2~20 ; |demo|phase:inst1|Add2~21 ; cout             ;
+; |demo|phase:inst1|Add0~2  ; |demo|phase:inst1|Add0~3  ; cout             ;
+; |demo|phase:inst1|Add0~4  ; |demo|phase:inst1|Add0~5  ; cout             ;
+; |demo|phase:inst1|Add0~6  ; |demo|phase:inst1|Add0~7  ; cout             ;
+; |demo|phase:inst1|Add0~8  ; |demo|phase:inst1|Add0~9  ; cout             ;
+; |demo|phase:inst1|Add0~10 ; |demo|phase:inst1|Add0~11 ; cout             ;
+; |demo|phase:inst1|Add0~12 ; |demo|phase:inst1|Add0~13 ; cout             ;
+; |demo|phase:inst1|Add0~14 ; |demo|phase:inst1|Add0~15 ; cout             ;
+; |demo|phase:inst1|Add0~16 ; |demo|phase:inst1|Add0~17 ; cout             ;
+; |demo|phase:inst1|Add0~18 ; |demo|phase:inst1|Add0~19 ; cout             ;
+; |demo|phase:inst1|Add0~20 ; |demo|phase:inst1|Add0~21 ; cout             ;
+; |demo|phase:inst1|Add0~22 ; |demo|phase:inst1|Add0~23 ; cout             ;
+; |demo|phase:inst1|Add1~16 ; |demo|phase:inst1|Add1~17 ; cout             ;
+; |demo|phase:inst1|Add1~18 ; |demo|phase:inst1|Add1~19 ; cout             ;
+; |demo|phase:inst1|Add1~20 ; |demo|phase:inst1|Add1~21 ; cout             ;
+; |demo|phase:inst1|Add1~22 ; |demo|phase:inst1|Add1~23 ; cout             ;
+; |demo|phase:inst1|Add4~18 ; |demo|phase:inst1|Add4~19 ; cout             ;
+; |demo|phase:inst1|Add5~16 ; |demo|phase:inst1|Add5~17 ; cout             ;
+; |demo|phase:inst1|Add3~20 ; |demo|phase:inst1|Add3~21 ; cout             ;
+; |demo|phase:inst1|Add6~14 ; |demo|phase:inst1|Add6~15 ; cout             ;
+; |demo|phase:inst1|Add9~8  ; |demo|phase:inst1|Add9~9  ; cout             ;
+; |demo|phase:inst1|Add8~10 ; |demo|phase:inst1|Add8~11 ; cout             ;
+; |demo|phase:inst1|Add7~12 ; |demo|phase:inst1|Add7~13 ; cout             ;
+; |demo|phase:inst1|Add0~24 ; |demo|phase:inst1|Add0~25 ; cout             ;
+; |demo|phase:inst1|Add1~24 ; |demo|phase:inst1|Add1~25 ; cout             ;
+; |demo|phase:inst1|Add2~22 ; |demo|phase:inst1|Add2~23 ; cout             ;
+; |demo|phase:inst1|Add6~16 ; |demo|phase:inst1|Add6~17 ; cout             ;
+; |demo|phase:inst1|Add2~24 ; |demo|phase:inst1|Add2~25 ; cout             ;
+; |demo|phase:inst1|Add3~22 ; |demo|phase:inst1|Add3~23 ; cout             ;
+; |demo|phase:inst1|Add5~18 ; |demo|phase:inst1|Add5~19 ; cout             ;
+; |demo|phase:inst1|Add9~10 ; |demo|phase:inst1|Add9~11 ; cout             ;
+; |demo|phase:inst1|Add1~26 ; |demo|phase:inst1|Add1~27 ; cout             ;
+; |demo|phase:inst1|Add7~14 ; |demo|phase:inst1|Add7~15 ; cout             ;
+; |demo|phase:inst1|Add8~12 ; |demo|phase:inst1|Add8~13 ; cout             ;
+; |demo|phase:inst1|Add4~20 ; |demo|phase:inst1|Add4~21 ; cout             ;
+; |demo|phase:inst1|Add0~26 ; |demo|phase:inst1|Add0~27 ; cout             ;
+; |demo|phase:inst1|Add6~18 ; |demo|phase:inst1|Add6~19 ; cout             ;
+; |demo|phase:inst1|Add2~26 ; |demo|phase:inst1|Add2~27 ; cout             ;
+; |demo|phase:inst1|Add3~24 ; |demo|phase:inst1|Add3~25 ; cout             ;
+; |demo|phase:inst1|Add9~12 ; |demo|phase:inst1|Add9~13 ; cout             ;
+; |demo|phase:inst1|Add5~20 ; |demo|phase:inst1|Add5~21 ; cout             ;
+; |demo|phase:inst1|Add1~28 ; |demo|phase:inst1|Add1~29 ; cout             ;
+; |demo|phase:inst1|Add7~16 ; |demo|phase:inst1|Add7~17 ; cout             ;
+; |demo|phase:inst1|Add4~22 ; |demo|phase:inst1|Add4~23 ; cout             ;
+; |demo|phase:inst1|Add8~14 ; |demo|phase:inst1|Add8~15 ; cout             ;
+; |demo|phase:inst1|Add0~28 ; |demo|phase:inst1|Add0~29 ; cout             ;
+; |demo|phase:inst1|Add6~20 ; |demo|phase:inst1|Add6~21 ; cout             ;
+; |demo|phase:inst1|Add2~28 ; |demo|phase:inst1|Add2~29 ; cout             ;
+; |demo|phase:inst1|Add5~22 ; |demo|phase:inst1|Add5~23 ; cout             ;
+; |demo|phase:inst1|Add9~14 ; |demo|phase:inst1|Add9~15 ; cout             ;
+; |demo|phase:inst1|Add1~30 ; |demo|phase:inst1|Add1~31 ; cout             ;
+; |demo|phase:inst1|Add3~26 ; |demo|phase:inst1|Add3~27 ; cout             ;
+; |demo|phase:inst1|Add7~18 ; |demo|phase:inst1|Add7~19 ; cout             ;
+; |demo|phase:inst1|Add8~16 ; |demo|phase:inst1|Add8~17 ; cout             ;
+; |demo|phase:inst1|Add4~24 ; |demo|phase:inst1|Add4~25 ; cout             ;
+; |demo|phase:inst1|Add0~30 ; |demo|phase:inst1|Add0~31 ; cout             ;
+; |demo|phase:inst1|Add6~22 ; |demo|phase:inst1|Add6~23 ; cout             ;
+; |demo|phase:inst1|Add2~30 ; |demo|phase:inst1|Add2~31 ; cout             ;
+; |demo|phase:inst1|Add3~28 ; |demo|phase:inst1|Add3~29 ; cout             ;
+; |demo|phase:inst1|Add9~16 ; |demo|phase:inst1|Add9~17 ; cout             ;
+; |demo|phase:inst1|Add5~24 ; |demo|phase:inst1|Add5~25 ; cout             ;
+; |demo|phase:inst1|Add1~32 ; |demo|phase:inst1|Add1~33 ; cout             ;
+; |demo|phase:inst1|Add7~20 ; |demo|phase:inst1|Add7~21 ; cout             ;
+; |demo|phase:inst1|Add4~26 ; |demo|phase:inst1|Add4~27 ; cout             ;
+; |demo|phase:inst1|Add8~18 ; |demo|phase:inst1|Add8~19 ; cout             ;
+; |demo|phase:inst1|Add0~32 ; |demo|phase:inst1|Add0~33 ; cout             ;
+; |demo|phase:inst1|Add6~24 ; |demo|phase:inst1|Add6~25 ; cout             ;
+; |demo|phase:inst1|Add2~32 ; |demo|phase:inst1|Add2~33 ; cout             ;
+; |demo|phase:inst1|Add5~26 ; |demo|phase:inst1|Add5~27 ; cout             ;
+; |demo|phase:inst1|Add9~18 ; |demo|phase:inst1|Add9~19 ; cout             ;
+; |demo|phase:inst1|Add1~34 ; |demo|phase:inst1|Add1~35 ; cout             ;
+; |demo|phase:inst1|Add3~30 ; |demo|phase:inst1|Add3~31 ; cout             ;
+; |demo|phase:inst1|Add7~22 ; |demo|phase:inst1|Add7~23 ; cout             ;
+; |demo|phase:inst1|Add8~20 ; |demo|phase:inst1|Add8~21 ; cout             ;
+; |demo|phase:inst1|Add4~28 ; |demo|phase:inst1|Add4~29 ; cout             ;
+; |demo|phase:inst1|Add0~34 ; |demo|phase:inst1|Add0~35 ; cout             ;
+; |demo|count:inst2|num[3]  ; |demo|count:inst2|num[3]  ; regout           ;
+; |demo|phase:inst1|Mux3~0  ; |demo|phase:inst1|Mux3~0  ; combout          ;
+; |demo|phase:inst1|Mux3~2  ; |demo|phase:inst1|Mux3~2  ; combout          ;
+; |demo|phase:inst1|Mux3~5  ; |demo|phase:inst1|Mux3~5  ; combout          ;
+; |demo|phase:inst1|Mux2~2  ; |demo|phase:inst1|Mux2~2  ; combout          ;
+; |demo|phase:inst1|Mux2~5  ; |demo|phase:inst1|Mux2~5  ; combout          ;
+; |demo|phase:inst1|Mux1~0  ; |demo|phase:inst1|Mux1~0  ; combout          ;
+; |demo|phase:inst1|Mux1~5  ; |demo|phase:inst1|Mux1~5  ; combout          ;
+; |demo|phase:inst1|Mux0~0  ; |demo|phase:inst1|Mux0~0  ; combout          ;
+; |demo|phase:inst1|Mux0~2  ; |demo|phase:inst1|Mux0~2  ; combout          ;
+; |demo|phase:inst1|Mux0~5  ; |demo|phase:inst1|Mux0~5  ; combout          ;
+; |demo|M[3]                ; |demo|M[3]                ; padio            ;
+; |demo|rst                 ; |demo|rst~corein          ; combout          ;
++---------------------------+---------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Mar 17 17:23:38 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off demo -c demo
+Info: Using vector source file "D:/Desktop/ex2/1/demo.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of demo.vwf called demo.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      81.07 %
+Info: Number of transitions in simulation is 931441
+Info: Vector file demo.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 188 megabytes
+    Info: Processing ended: Thu Mar 17 17:23:39 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+

@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.694 ns
+From           : control
+To             : print:inst4|out[10]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.217 ns
+From           : print:inst4|out[16]
+To             : out[16]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.467 ns
+From           : clk
+To             : DAC
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -3.499 ns
+From           : car
+To             : count:inst|num[0]
+From Clock     : --
+To Clock       : clkm
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clkm'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 53.10 MHz ( period = 18.832 ns )
+From           : count:inst|num[17]
+To             : count:inst|fren[19]
+From Clock     : clkm
+To Clock       : clkm
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 180.05 MHz ( period = 5.554 ns )
+From           : sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|ram_block1a0~porta_address_reg7
+To             : sinphase:inst3|altsyncram:altsyncram_component|altsyncram_4u61:auto_generated|q_a[9]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
