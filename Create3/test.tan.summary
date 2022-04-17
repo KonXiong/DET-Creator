@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.695 ns
+From           : choice
+To             : print:inst12|out2[1]
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.807 ns
+From           : inst5
+To             : port1
+From Clock     : fx
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.269 ns
+From           : fx
+To             : port1
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.256 ns
+From           : gate
+To             : inst5
+From Clock     : --
+To Clock       : fx
+Failed Paths   : 0
+
+Type           : Clock Setup: 'fx'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.05 MHz ( period = 328.102 ns )
+From           : count:inst6|num[28]
+To             : space:inst11|duty[0]
+From Clock     : fx
+To Clock       : fx
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 159.39 MHz ( period = 6.274 ns )
+From           : count:inst7|num[0]~_Duplicate_1
+To             : count:inst7|num[17]
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Hold: 'fx'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : count:inst7|num[0]~_Duplicate_1
+To             : count:inst7|num[0]~_Duplicate_1
+From Clock     : fx
+To Clock       : fx
+Failed Paths   : 155
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 155
+
+--------------------------------------------------------------------------------------
+
